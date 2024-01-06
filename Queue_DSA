@@ -1,0 +1,180 @@
+//public class Stackdd {
+//
+// static class QueA {
+//  int f = -1;
+//  int r = -1;
+//  int size = 0;
+//  int a[] = new int[5];
+//
+//  void add(int value) {
+//   if (r == a.length - 1)
+//   {
+//    System.out.println("Queue is full");
+//    return;
+//   }
+//   if (f == -1)
+//   {
+//    f = 0; // Update front when adding the first element
+//   }
+//   a[++r] = value; // Increment rear and then assign the value
+//   size++;
+//  }
+//
+//  public int remove() {
+//   if (size == 0) {
+//    System.out.println("Queue is Empty");
+//    return -1;
+//   }
+//   int removedItem = a[f];
+//   f++;
+//   size--;
+//   return removedItem;
+//  }
+//
+//  public int peek() {
+//   if (size == 0) {
+//    System.out.println("Queue is empty");
+//    return -1;
+//   }
+//   return a[f];
+//  }
+//
+//  public boolean isEmpty() {
+//   return size == 0;
+//  }
+//
+//  public void display() {
+//   if (size == 0) {
+//    System.out.println("queue is empty");
+//   } else {
+//    for (int i = f; i <= r; i++) {
+//     System.out.print(a[i] + " ");
+//    }
+//    System.out.println();
+//   }
+//  }
+// }
+//
+// public static void main(String[] args) {
+//  QueA q = new QueA();
+//  q.add(1);
+//  q.add(2);
+//  q.add(3);
+//  q.add(4);
+//  q.add(5);
+//  q.remove();
+//  q.display(); // Output: 1 2 3 4 5
+// }
+//}
+//public class Stackdd {
+// public static void main(String[] args) {
+//
+//  int a=12 ,b=4;
+//  int f=1;
+//  int gcd=0;
+//
+//
+//
+//   for(int i=1; i<=a&&i<=b; ++i)
+//   {
+//    if(a%i==0&&b%i==0)
+//
+//       gcd=i;
+//    }
+//    int lcm=(a*b)/gcd;
+//
+//    System.out.println(lcm);
+//
+//   }
+// }
+//
+//_________________________________________________________________________________________________________
+//implementing LinkedList in Stack   (05-01-24)
+
+//public class Stackdd {
+// public static class Node{
+//
+//      int val;
+//      Node next;
+//
+//      Node(int val)
+//      {
+//       this.val=val;
+//      }
+// }
+// public static class QueuA{
+//     Node head=null;
+//     Node tail=null;
+//     int size=0;
+//     public void add(int x)
+//     {
+//       Node temp = new Node(x);
+//       if(size==0)
+//       {
+//        head=tail=temp;
+//       }
+//       else {
+//        tail.next=temp;
+//        tail=temp;
+//       }
+//      size++;
+// }
+// public void display()
+// {
+//  if(size==0)
+//  {
+//   System.out.println("queue is empty");
+//    return ;
+//  }
+//  Node temp=head;
+//  while(temp!=null)
+//  {
+//   System.out.println(temp.val+"");
+//   temp=temp.next;
+//  }
+//  System.out.println();
+//
+// }
+// public int peek()
+// {
+//  if(size==0)
+//  {
+//   System.out.println("Queue is empty");
+//   return -1;
+//  }
+//  return head.val;
+// }
+// public int remove()
+// {
+//  if(size==0)
+//  {
+//   System.out.println("queue is empty");
+//   return -1;
+//  }
+//  int x= head.val;
+//  head= head.next;
+//  size--;
+//  return x;
+// }
+//
+// }
+//
+// public static void main(String[] args)
+// {
+//
+//  QueuA p = new QueuA();
+//  p.add(2);
+//  p.add(4);
+//  p.add(6);
+//  p.add(8);
+////  p.peek();
+////  p.display();
+//  p.peek();
+//  System.out.println("remove");
+//  p.remove();
+//  p.remove();
+//  p.display();
+////  System.out.println(p.peek());
+// }
+//
+//}
